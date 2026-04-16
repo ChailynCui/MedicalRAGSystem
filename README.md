@@ -9,10 +9,8 @@
 - FastAPI 后端服务
 - React + Vite 前端可视化界面
 
-项目适合用来学习或演示“医疗知识图谱 + 图谱问答 + GraphRAG”的完整链路，也可以作为后续接入更大模型、更强检索策略的基础工程。
+这是一个完整的医疗知识图谱问答系统，覆盖了从数据采集、知识图谱构建、规则问答、GraphRAG 检索生成，到后端服务和前端可视化的完整实现链路，也可以作为后续接入更大模型与更强检索策略的基础工程。
 
-![聊天示例](./img/chat1.png)
-![图谱与问答示例](./img/chat2.png)
 
 ## 项目特点
 
@@ -105,8 +103,8 @@ MedicalGraphRAGSystem/
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/ChailynCui/MedicalRAGSystem.git MedicalGraphRAGSystem
-cd MedicalGraphRAGSystem
+git clone https://github.com/ChailynCui/MedicalRAGSystem.git
+cd MedicalRAGSystem
 ```
 
 ### 2. 安装 Python 依赖
@@ -347,25 +345,16 @@ python data_spider/main.py --start 1 --end 100
 - `.env`
 - `settings.py` 默认值
 
-## 开发建议
-
-如果你准备继续扩展这个项目，比较推荐的方向有：
-
-- 引入更细粒度的实体类型和关系类型
-- 为 GraphRAG 增加重排序与证据引用
-- 增加自动化测试与样例数据集
-- 引入更严格的医学知识校验
 - 增加 Docker Compose 一键启动方案
 
 ## 免责声明
 
-- 本项目主要用于技术学习、实验和演示
 - 医疗问答结果不能替代专业医生诊断
 - 如将数据用于公开部署或商业用途，请先确认数据来源与授权合规性
 
 ## 致谢
 
-这个仓库是在医疗知识图谱问答思路上继续工程化整理与扩展的版本，重点补齐了：
+本项目重点实现了：
 
 - 更清晰的模块拆分
 - GraphRAG 链路
